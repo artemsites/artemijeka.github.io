@@ -4,28 +4,40 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title></title>
+ <title>Cards</title>
+ <link rel="stylesheet" href="./style.min.css">
 </head>
 
 <body>
 
- <header>
- </header>
- 
- <main>
+ <section class="cards">
 
-  <figure>
-   <h3>Текст наложенный на изображение | Text overlaid on image</h3>
-   <img src="/thumbs/text-to-img.png" alt="Превью">
-   <figcaption>
-    <a href="/text-to-img">ссылка</a>
-    <a href="https://github.com/artemijeka/text-to-img">source</a>
+
+  <figure class="card">
+   <img src="" alt="" class="card__img">
+   <figcaption class="card__content">
+    <h2 class="card__title">01</h2>
+    <h3 class="card__subtitle">Card One</h3>
+    <p class="card__text">Текст наложенный на изображение - Text overlaid on image</p>
+    <a class="card__link" href="/text-to-img">Подробнее</a>
+    <a class="card__link" href="https://github.com/artemijeka/text-to-img">source</a>
    </figcaption>
   </figure>
 
- </main>
+
+ </section>
 
 
+
+ <script src="./vanilla-tilt.js"></script>
+ <script>
+  VanillaTilt.init(document.querySelectorAll(".card"), {
+   max: 25,
+   speed: 400,
+   glare: true,   // if it should have a "glare" effect
+   "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+  });
+ </script>
 </body>
 
 </html>
