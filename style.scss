@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -51,16 +50,29 @@ body::after {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   overflow: hidden;
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    transition: 500ms;
+  }
   &__content {
     padding: 20px;
     text-align: center;
-    transition: .5s;
+    transition: 500ms;
     transform: translateY(100px);
     opacity: 0;
   }
   &:hover &__content {
     transform: translateY(0);
     opacity: 1;
+    transition: 500ms;
+  }
+  &:hover &__img {
+    top: -101%;
+    opacity: 0;
+    transition: 500ms;
   }
   &__title {
     position: absolute;
@@ -76,6 +88,10 @@ body::after {
     color: #fff;
     pointer-events: none;
   }
+  &__title:hover,
+  &__subtitle:hover {
+    font-weight: 900;
+  }
   &__text {
     font-size: 1em;
     color: #fff;
@@ -89,7 +105,7 @@ body::after {
     color: #000;
     border-radius: 20px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 }
