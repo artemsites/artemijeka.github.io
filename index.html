@@ -26,13 +26,14 @@
 
   <figure class="card">
    <!-- <img class="card__img" src="./thumbs/cards.webp" alt=""> -->
-   <video class="card__img" width="280" height="400" autoplay="autoplay" loop="loop">
+   <video class="card__img" width="280" height="400" autoplay loop>
     <source src="./thumbs/cards.webm" type='video/webm; codecs="vp8, vorbis"'>
    </video>
    <figcaption class="card__content" style="opacity: 0;">
     <p class="card__title">02</p>
     <p class="card__subtitle">Card Two</p>
-    <h2 class="card__text">Карточки с поворотом в зависимости от движения мыши | Rotation cards based on mouse movement</h2>
+    <h2 class="card__text">Карточки с поворотом в зависимости от движения мыши | Rotation cards based on mouse movement
+    </h2>
     <a class="card__link" href="/cards/">Посмотреть</a>
     <a class="card__link" href="https://github.com/artemijeka/cards/">Source</a>
    </figcaption>
@@ -40,7 +41,7 @@
 
   <figure class="card">
    <!-- <img class="card__img" src="./thumbs/plastic-card.webp" alt=""> -->
-   <video class="card__img" width="280" height="400" autoplay="autoplay" loop="loop">
+   <video class="card__img" width="280" height="400" autoplay loop>
     <source src="./thumbs/plastic-card.webm" type='video/webm; codecs="vp8, vorbis"'>
    </video>
    <figcaption class="card__content" style="opacity: 0;">
@@ -54,8 +55,8 @@
 
   <figure class="card">
    <!-- <img class="card__img" src="./thumbs/neon-buttons.webp" alt=""> -->
-   <video src="./thumbs/neon-buttons.webm" class="card__img" width="280" height="400" autoplay="autoplay" loop="loop">
-    <!-- <source type='video/webm; codecs="vp8, vorbis"'> -->
+   <video class="card__img" width="280" height="400" autoplay loop>
+    <source src="./thumbs/neon-buttons.webm" type='video/webm; codecs="vp8, vorbis"'>
    </video>
    <figcaption class="card__content" style="opacity: 0;">
     <p class="card__title">04</p>
@@ -79,6 +80,14 @@
    glare: true,   // if it should have a "glare" effect
    "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
   });
+
+  window.onload = function () {
+   var videos = document.querySelectorAll('video');
+   videos.forEach(function (videoItem, i, ar) {
+    // console.log(elem.autoplay);
+    videoItem.load();
+   });
+  };
  </script>
 </body>
 
