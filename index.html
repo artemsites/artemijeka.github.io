@@ -81,13 +81,17 @@
    "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
   });
 
-  window.onload = function () {
+  window.onload = videoPlay();
+
+  document.addEventListener("DOMContentLoaded", videoPlay);
+
+  function videoPlay() {
    var videos = document.querySelectorAll('video');
    videos.forEach(function (videoItem, i, ar) {
     // console.log(elem.autoplay);
     videoItem.load();
    });
-  };
+  }
  </script>
 </body>
 
