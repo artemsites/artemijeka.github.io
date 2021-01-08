@@ -7,11 +7,13 @@
 }
 
 body {
-  background-image: url('./background.jpg');
-  position: relative;
+  background-image: url(./background.jpg);
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  width: 100%;
 }
 
 body::after {
@@ -26,13 +28,21 @@ body::after {
 }
 
 .cards {
-  max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   z-index: 9;
+  overflow-y: auto;
+  &__container {
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card {
