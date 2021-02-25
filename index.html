@@ -2,311 +2,338 @@
 <html lang="ru">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>FrontEnd Effects</title>
- <meta name="description" content="GitHub | FrontEnd Effects">
- <link rel="stylesheet" href="./style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontEnd Effects</title>
+  <meta name="description" content="GitHub | FrontEnd Effects">
+  <link rel="stylesheet" href="./style.min.css">
 </head>
 
 <body>
 
- <section class="cards">
+  <section class="cards">
 
-  <div class="cards__container">
+    <div class="cards__container">
 
-   <figure class="card-tilt">
-    <img class="card-tilt__img" src="./thumbs/img-text.jpg" alt="">
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">01</p>
-     <p class="card-tilt__subtitle">Card One</p>
-     <h2 class="card-tilt__text">Текст наложенный на изображение | Text overlaid on image</h2>
-     <a class="card-tilt__link" href="/img-text/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/img-text/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <img class="card-tilt__img" src="./thumbs/img-text.jpg" alt="">
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">01</p>
+          <p class="card-tilt__subtitle">Card One</p>
+          <h2 class="card-tilt__text">Текст наложенный на изображение | Text overlaid on image</h2>
+          <a class="card-tilt__link" href="/img-text/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/img-text/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/card-tilt.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/card-tilt.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">02</p>
-     <p class="card-tilt__subtitle">Card Two</p>
-     <h2 class="card-tilt__text">Карточки с поворотом в зависимости от движения мыши | Rotation cards based on mouse movement
-     </h2>
-     <a class="card-tilt__link" href="/card-tilt/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/card-tilt/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/card-tilt.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/card-tilt.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">02</p>
+          <p class="card-tilt__subtitle">Card Two</p>
+          <h2 class="card-tilt__text">Карточки с поворотом в зависимости от движения мыши | Rotation cards based on
+            mouse movement
+          </h2>
+          <a class="card-tilt__link" href="/card-tilt/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/card-tilt/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/card-bank.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/card-bank.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">03</p>
-     <p class="card-tilt__subtitle">Card Three</p>
-     <h2 class="card-tilt__text">Банковская карта с разворотом | Bank card with a spread</h2>
-     <a class="card-tilt__link" href="/card-bank/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/card-bank/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/card-bank.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/card-bank.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">03</p>
+          <p class="card-tilt__subtitle">Card Three</p>
+          <h2 class="card-tilt__text">Банковская карта с разворотом | Bank card with a spread</h2>
+          <a class="card-tilt__link" href="/card-bank/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/card-bank/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/button-neon.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/button-neon.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">04</p>
-     <p class="card-tilt__subtitle">Card Four</p>
-     <h2 class="card-tilt__text">Светящиеся неоновые кнопки | Glowing neon buttons</h2>
-     <a class="card-tilt__link" href="/button-neon/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/button-neon/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/button-neon.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/button-neon.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">04</p>
+          <p class="card-tilt__subtitle">Card Four</p>
+          <h2 class="card-tilt__text">Светящиеся неоновые кнопки | Glowing neon buttons</h2>
+          <a class="card-tilt__link" href="/button-neon/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/button-neon/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/loader-neomorphic-sliders.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/loader-neomorphic-sliders.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">05</p>
-     <p class="card-tilt__subtitle">Card Five</p>
-     <h2 class="card-tilt__text">Загрузчик - неоморфные ползунки | Loader - neomorphic sliders</h2>
-     <a class="card-tilt__link" href="/loader-neomorphic-sliders/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/loader-neomorphic-sliders/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/loader-neomorphic-sliders.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/loader-neomorphic-sliders.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">05</p>
+          <p class="card-tilt__subtitle">Card Five</p>
+          <h2 class="card-tilt__text">Загрузчик - неоморфные ползунки | Loader - neomorphic sliders</h2>
+          <a class="card-tilt__link" href="/loader-neomorphic-sliders/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/loader-neomorphic-sliders/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/image-change-line.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/image-change-line.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">06</p>
-     <p class="card-tilt__subtitle">Card Six</p>
-     <h2 class="card-tilt__text">Переход одного изображения в другое вертикальной линией | Transition from one image to
-      another with a vertical line</h2>
-     <a class="card-tilt__link" href="/image-change-line/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/image-change-line/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/image-change-line.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/image-change-line.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">06</p>
+          <p class="card-tilt__subtitle">Card Six</p>
+          <h2 class="card-tilt__text">Переход одного изображения в другое вертикальной линией | Transition from one
+            image to
+            another with a vertical line</h2>
+          <a class="card-tilt__link" href="/image-change-line/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/image-change-line/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/validate-signal-lamp.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/validate-signal-lamp.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">07</p>
-     <p class="card-tilt__subtitle">Card Seven</p>
-     <h2 class="card-tilt__text">Сигнальная лампа для валидного input | Signal lamp for valid input</h2>
-     <a class="card-tilt__link" href="/validate-signal-lamp/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/validate-signal-lamp/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/validate-signal-lamp.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/validate-signal-lamp.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">07</p>
+          <p class="card-tilt__subtitle">Card Seven</p>
+          <h2 class="card-tilt__text">Сигнальная лампа для валидного input | Signal lamp for valid input</h2>
+          <a class="card-tilt__link" href="/validate-signal-lamp/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/validate-signal-lamp/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/viewer-360-deg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/viewer-360-deg.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">08</p>
-     <p class="card-tilt__subtitle">Card Eight</p>
-     <h2 class="card-tilt__text">360-градусный просмотрщик объектов | 360-degree object viewer</h2>
-     <a class="card-tilt__link" href="/viewer-360-deg/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/viewer-360-deg/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/viewer-360-deg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/viewer-360-deg.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">08</p>
+          <p class="card-tilt__subtitle">Card Eight</p>
+          <h2 class="card-tilt__text">360-градусный просмотрщик объектов | 360-degree object viewer</h2>
+          <a class="card-tilt__link" href="/viewer-360-deg/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/viewer-360-deg/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/card-circular-filling.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/card-circular-filling.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">09</p>
-     <p class="card-tilt__subtitle">Card Nine</p>
-     <h2 class="card-tilt__text">Позиционное круговое заполнение карточки цветом | Positional circular filling of the card with color</h2>
-     <a class="card-tilt__link" href="/card-circular-filling/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/card-circular-filling/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/player-audio.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/player-audio.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">10</p>
-     <p class="card-tilt__subtitle">Card Ten</p>
-     <h2 class="card-tilt__text">Аудио плеер - Audio player</h2>
-     <a class="card-tilt__link" href="/player-audio/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/player-audio/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/card-circular-filling.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/card-circular-filling.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">09</p>
+          <p class="card-tilt__subtitle">Card Nine</p>
+          <h2 class="card-tilt__text">Позиционное круговое заполнение карточки цветом | Positional circular filling of
+            the card with color</h2>
+          <a class="card-tilt__link" href="/card-circular-filling/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/card-circular-filling/">Source</a>
+        </figcaption>
+      </figure>
 
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/text-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/text-video.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">11</p>
-     <p class="card-tilt__subtitle">Card Eleven</p>
-     <h2 class="card-tilt__text">Видео в тексте - Video in text</h2>
-     <a class="card-tilt__link" href="/text-video/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/text-video/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/gallery-3d-circle-rotating.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/gallery-3d-circle-rotating.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">12</p>
-     <p class="card-tilt__subtitle">Card Twelve</p>
-     <h2 class="card-tilt__text">Вращающиеся изображения 3d галерея | Rotating images 3d gallery</h2>
-     <a class="card-tilt__link" href="/gallery-3d-circle-rotating/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/gallery-3d-circle-rotating/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/loader-3d-circles.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/loader-3d-circles.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">13</p>
-     <p class="card-tilt__subtitle">Card Thirteen</p>
-     <h2 class="card-tilt__text">Загрузчик - 3D круги с волнистой анимацией | Loader - 3D circles with wavy animation</h2>
-     <a class="card-tilt__link" href="/loader-3d-circles/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/loader-3d-circles/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/button-wavy-circles.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/button-wavy-circles.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">14</p>
-     <p class="card-tilt__subtitle">Card Fourteen</p>
-     <h2 class="card-tilt__text">Кнопка - расходящиеся волной круги по нажатию | Button-diverging wave circles when pressed</h2>
-     <a class="card-tilt__link" href="/button-wavy-circles/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/button-wavy-circles/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/text-light-blink.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/text-light-blink.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">15</p>
-     <p class="card-tilt__subtitle">Card Fiveteen</p>
-     <h2 class="card-tilt__text">Текст светящий и мерцающий | The text is glowing and flickering</h2>
-     <a class="card-tilt__link" href="/text-light-blink/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/text-light-blink/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/gradient-light.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/gradient-light.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">16</p>
-     <p class="card-tilt__subtitle">Card Sixteen</p>
-     <h2 class="card-tilt__text">Градиентное свечение под блоками | Gradient glow under blocks</h2>
-     <a class="card-tilt__link" href="/gradient-light/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/gradient-light/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/card-product-3d.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/card-product-3d.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">17</p>
-     <p class="card-tilt__subtitle">Card Seventeen</p>
-     <h2 class="card-tilt__text">Карточка товара 3D | Product card 3D</h2>
-     <a class="card-tilt__link" href="/card-product-3d/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/card-product-3d/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/block-behind-partition.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/block-behind-partition.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">18</p>
-     <p class="card-tilt__subtitle">Card Eighteen</p>
-     <h2 class="card-tilt__text">Блок выходит из-за перегородки при наведении | The block comes out from the baffle on hover</h2>
-     <a class="card-tilt__link" href="/block-behind-partition/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/block-behind-partition/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/list-to-do.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/list-to-do.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">19</p>
-     <p class="card-tilt__subtitle">Card Nineteen</p>
-     <h2 class="card-tilt__text">Список дел | List To Do</h2>
-     <a class="card-tilt__link" href="/list-to-do/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/list-to-do/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/calculator-tilt.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <source src="./thumbs/calculator-tilt.webm" type='video/webm; codecs="vp8, vorbis"'>
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">20</p>
-     <p class="card-tilt__subtitle">Card Twenteen</p>
-     <h2 class="card-tilt__text">Калькулятор с наклоном | Tilt calculator</h2>
-     <a class="card-tilt__link" href="/calculator-tilt/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/calculator-tilt/">Source</a>
-    </figcaption>
-   </figure>
-   
-   <figure class="card-tilt">
-    <video class="card-tilt__img test" width="280" height="400" muted="muted" autoplay="autoplay" loop="loop">
-     <source src="./thumbs/scatter-text.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     <!-- <source src="./thumbs/scatter-text.webm" type='video/webm; codecs="vp8, vorbis"'> -->
-    </video>
-    <figcaption class="card-tilt__content" style="opacity: 0;">
-     <p class="card-tilt__title">21</p>
-     <p class="card-tilt__subtitle">Card Twenty One</p>
-     <h2 class="card-tilt__text">Разбрасывание текста на буквы и собирание обратно в текст | Scattering text into letters and picking back into text</h2>
-     <a class="card-tilt__link" href="/scatter-text/">Посмотреть</a>
-     <a class="card-tilt__link" href="https://github.com/artemijeka/scatter-text/">Source</a>
-    </figcaption>
-   </figure>
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/player-audio.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/player-audio.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">10</p>
+          <p class="card-tilt__subtitle">Card Ten</p>
+          <h2 class="card-tilt__text">Аудио плеер - Audio player</h2>
+          <a class="card-tilt__link" href="/player-audio/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/player-audio/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/text-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/text-video.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">11</p>
+          <p class="card-tilt__subtitle">Card Eleven</p>
+          <h2 class="card-tilt__text">Видео в тексте - Video in text</h2>
+          <a class="card-tilt__link" href="/text-video/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/text-video/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/gallery-3d-circle-rotating.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/gallery-3d-circle-rotating.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">12</p>
+          <p class="card-tilt__subtitle">Card Twelve</p>
+          <h2 class="card-tilt__text">Вращающиеся изображения 3d галерея | Rotating images 3d gallery</h2>
+          <a class="card-tilt__link" href="/gallery-3d-circle-rotating/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/gallery-3d-circle-rotating/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/loader-3d-circles.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/loader-3d-circles.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">13</p>
+          <p class="card-tilt__subtitle">Card Thirteen</p>
+          <h2 class="card-tilt__text">Загрузчик - 3D круги с волнистой анимацией | Loader - 3D circles with wavy
+            animation</h2>
+          <a class="card-tilt__link" href="/loader-3d-circles/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/loader-3d-circles/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/button-wavy-circles.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/button-wavy-circles.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">14</p>
+          <p class="card-tilt__subtitle">Card Fourteen</p>
+          <h2 class="card-tilt__text">Кнопка - расходящиеся волной круги по нажатию | Button-diverging wave circles when
+            pressed</h2>
+          <a class="card-tilt__link" href="/button-wavy-circles/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/button-wavy-circles/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/text-light-blink.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/text-light-blink.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">15</p>
+          <p class="card-tilt__subtitle">Card Fiveteen</p>
+          <h2 class="card-tilt__text">Текст светящий и мерцающий | The text is glowing and flickering</h2>
+          <a class="card-tilt__link" href="/text-light-blink/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/text-light-blink/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/gradient-light.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/gradient-light.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">16</p>
+          <p class="card-tilt__subtitle">Card Sixteen</p>
+          <h2 class="card-tilt__text">Градиентное свечение под блоками | Gradient glow under blocks</h2>
+          <a class="card-tilt__link" href="/gradient-light/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/gradient-light/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/card-product-3d.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/card-product-3d.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">17</p>
+          <p class="card-tilt__subtitle">Card Seventeen</p>
+          <h2 class="card-tilt__text">Карточка товара 3D | Product card 3D</h2>
+          <a class="card-tilt__link" href="/card-product-3d/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/card-product-3d/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/block-behind-partition.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/block-behind-partition.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">18</p>
+          <p class="card-tilt__subtitle">Card Eighteen</p>
+          <h2 class="card-tilt__text">Блок выходит из-за перегородки при наведении | The block comes out from the baffle
+            on hover</h2>
+          <a class="card-tilt__link" href="/block-behind-partition/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/block-behind-partition/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/list-to-do.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/list-to-do.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">19</p>
+          <p class="card-tilt__subtitle">Card Nineteen</p>
+          <h2 class="card-tilt__text">Список дел | List To Do</h2>
+          <a class="card-tilt__link" href="/list-to-do/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/list-to-do/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/calculator-tilt.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source data-src="./thumbs/calculator-tilt.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">20</p>
+          <p class="card-tilt__subtitle">Card Twenteen</p>
+          <h2 class="card-tilt__text">Калькулятор с наклоном | Tilt calculator</h2>
+          <a class="card-tilt__link" href="/calculator-tilt/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/calculator-tilt/">Source</a>
+        </figcaption>
+      </figure>
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/scatter-text.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <!-- <source data-src="./thumbs/scatter-text.webm" type='video/webm; codecs="vp8, vorbis"'> -->
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">21</p>
+          <p class="card-tilt__subtitle">Card Twenty One</p>
+          <h2 class="card-tilt__text">Разбрасывание текста на буквы и собирание обратно в текст | Scattering text into
+            letters and picking back into text</h2>
+          <a class="card-tilt__link" href="/scatter-text/">Посмотреть</a>
+          <a class="card-tilt__link" href="https://github.com/artemijeka/scatter-text/">Source</a>
+        </figcaption>
+      </figure>
 
 
 
@@ -316,21 +343,29 @@
 
 
 
-  </div><!-- /.cards__container -->
+    </div><!-- /.cards__container -->
 
- </section>
+  </section>
 
 
 
- <script src="./vanilla-tilt.js"></script>
- <script>
-  VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
-   max: 25,
-   speed: 400,
-   glare: true,   // if it should have a "glare" effect
-   "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
-  });
- </script>
+  <script src="./vanilla-tilt.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
+      max: 25,
+      speed: 400,
+      glare: true,   // if it should have a "glare" effect
+      "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+    });
+
+    var lazyLoadInstance = new LazyLoad({
+      // Your custom settings go here
+    });
+  </script>
 </body>
 
 </html>
