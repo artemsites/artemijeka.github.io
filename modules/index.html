@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontEnd Модули | FrontEnd Modules</title>
+  <meta name="description" content="GitHub | FrontEnd Effects">
+  <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+
+  <section class="cards">
+
+    <div class="cards__container">
+
+      <figure class="card-tilt">
+        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+          loop="loop">
+          <source data-src="./thumbs/jquery-fixer.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <!-- <source data-src="./thumbs/jquery-fixer.webm" type='video/webm; codecs="vp8, vorbis"'> -->
+        </video>
+        <figcaption class="card-tilt__content" style="opacity: 0;">
+          <p class="card-tilt__title">01</p>
+          <p class="card-tilt__subtitle">Card One</p>
+          <h2 class="card-tilt__text">Фиксация блоков при прокрутке | Block fixing when scrolling</h2>
+          <!-- <a class="card-tilt__link" href="/jquery-fixer/">Посмотреть</a> -->
+          <a class="card-tilt__link" href="https://snippets.cacher.io/snippet/79e169f9ca705c345531">Source</a>
+        </figcaption>
+      </figure>
+
+
+    </div><!-- /.cards__container -->
+
+  </section>
+
+
+
+  <script src="./vanilla-tilt.js"></script>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
+      max: 25,
+      speed: 400,
+      glare: true,   // if it should have a "glare" effect
+      "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+    });
+
+    var lazyLoadInstance = new LazyLoad({/*Your custom settings go here*/});
+  </script>
+</body>
+
+</html>
