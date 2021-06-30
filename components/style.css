@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+.nav {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 0 5px 20px rgb(0 0 0 / 25%); */
+
+  position: relative;
+  z-index: 999;
+
+}
+.nav__link {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+
+  margin: 0 0.5em;
+}
+.nav__link.--active {
+  font-weight: 900;
+}
