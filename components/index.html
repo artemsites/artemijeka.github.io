@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page-components">
 
 <head>
   <meta charset="utf-8">
@@ -23,6 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FrontEnd Components</title>
   <meta name="description" content="GitHub | FrontEnd Components">
+  <link rel="stylesheet" href="../css/style.min.css">
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -31,81 +32,84 @@
 
 
 
-  <header>
+  <nav class="nav">
+    <a href="../index.html" class="nav__link">effects</a>
+    <a href="../modules/index.html" class="nav__link">modules</a>
+    <a href="./index.html" class="nav__link --active">components</a>
+    <a href="../../../" class="nav__link">web.master-artem.ru</a>
+  </nav><!-- /.nav -->
 
-    <nav class="nav">
-      <a href="../" class="nav__link">effects</a>
-      <a href="../modules/" class="nav__link">modules</a>
-      <a href="./" class="nav__link --active">components</a>
-      <a href="//web.master-artem.ru/" class="nav__link">web.master-artem.ru</a>
-    </nav>
 
-    <div data-link-to-github="https://github.com/artemijeka/btn-menu" class="js-link-to-github">
+
+  <div class="container">
+
+
+
+    <div data-link-to-github="https://github.com/artemijeka/btn-menu" class="js-link-to-github --mt-15">
       <link rel="stylesheet" href="./blocks/btn-menu/css/btn-menu.min.css">
       <button class="btn-menu"><span class="btn-menu__decor"></span></button>
       <script src="./blocks/btn-menu/js/btn-menu.js"></script>
-    </div>
-
-  </header>
+    </div><!-- btn-menu -->
 
 
 
-  <main>
-
-    <div data-link-to-github="https://github.com/artemijeka/btn-circle-fill" class="js-link-to-github">
+    <div data-link-to-github="https://github.com/artemijeka/btn-circle-fill" class="js-link-to-github --mt-15">
       <link rel="stylesheet" href="./blocks/btn-circle-fill/css/btn-circle-fill.min.css">
-      <button class="btn-circle-fill --circle-fill">
-        <span class="btn-circle-fill__text">Кнопка</span><span class="btn-circle-fill__filler"></span>
+      <button class="btn-circle-fill --mt-15">
+        <span class="btn-circle-fill__text">Кнопка</span>
+        <span class="btn-circle-fill__filler"></span>
+      </button>
+      <button class="btn-circle-fill --black --mt-15">
+        <span class="btn-circle-fill__text">Кнопка</span>
+        <span class="btn-circle-fill__filler"></span>
       </button>
       <script src="./blocks/btn-circle-fill/js/btn-circle-fill.js"></script>
-    </div>
-
-  </main>
+    </div><!-- btn-circle-fill -->
 
 
 
-  <footer></footer>
+    <div data-link-to-github="https://github.com/artemijeka/select" class="js-link-to-github --mt-15">
+      <link rel="stylesheet" href="./blocks/select/css/select.min.css">
+      <div class="select --multiple --mt-15">
+        <button class="select__btn"></button>
+        <label class="select__label"><input type="checkbox" name="question1" class="select__option"
+            value="Ответ на вопрос №1"><span class="select__label-text">Ответ на вопрос №1</span></label>
+        <label class="select__label"><input type="checkbox" name="question1" class="select__option"
+            value="Ответ на вопрос №2"><span class="select__label-text">Ответ на вопрос №2</span></label>
+        <label class="select__label"><input type="checkbox" name="question1" class="select__option"
+            value="Ответ на вопрос №3"><span class="select__label-text">Ответ на вопрос №3</span></label>
+      </div>
+
+      <div class="select --one --mt-15">
+        <button class="select__btn"></button>
+        <label class="select__label"><input type="radio" name="question1" class="select__option"
+            value="Ответ на вопрос №1"><span class="select__label-text">Ответ на вопрос №1</span></label>
+        <label class="select__label"><input type="radio" name="question1" class="select__option"
+            value="Ответ на вопрос №2"><span class="select__label-text">Ответ на вопрос №2</span></label>
+        <label class="select__label"><input type="radio" name="question1" class="select__option"
+            value="Ответ на вопрос №3"><span class="select__label-text">Ответ на вопрос №3</span></label>
+      </div>
+      <script src="./blocks/select/js/select.js"></script>
+    </div><!-- select -->
 
 
 
-  <style>
-    .context-menu {
-      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 1em;
+    <div data-link-to-github="https://github.com/artemijeka/checkbox" class="js-link-to-github --mt-15">
+      <link rel="stylesheet" href="./blocks/checkbox/css/checkbox.min.css">
+      <label class="checkbox__label --mt-15">
+        <input type="checkbox" class="checkbox">
+        <span class="checkbox__decor"></span>
+        <span class="checkbox__text">Чекбокс</span>
+      </label>
+    </div><!-- checkbox -->
 
-      position: absolute;
-    }
-  </style>
-  <script>
 
-    document.addEventListener('click', function (e) {
-      let contextMenuDelete = document.querySelector('.context-menu');
-      contextMenuDelete.remove();
-    });
 
-    document.addEventListener('contextmenu', function (e) {
+  </div><!-- /.cards -->
 
-      e.preventDefault();
 
-      let contextMenuExisting = document.querySelector('.context-menu');
-      if (contextMenuExisting) {
-        contextMenuExisting.remove();
-      }
 
-      let contextMenu = document.createElement('div');
-      contextMenu.classList.add('context-menu');
-
-      let closest = e.target.closest('.js-link-to-github');
-      let linkToGitHub = closest.getAttribute('data-link-to-github');
-      contextMenu.innerHTML = '<a href="' + linkToGitHub + '" target="_blank">' + linkToGitHub + '</a>';
-      contextMenu.style.left = e.offsetX + 25 + 'px';
-      contextMenu.style.top = e.offsetY + 25 + 'px';
-      document.body.append(contextMenu);
-    });
-
-  </script>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
