@@ -5,6 +5,15 @@
   align-items: center;
 }
 
+.js-context-menu {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1em 1.5em;
+  border-radius: 0.25em;
+
+  position: absolute;
+  z-index: 100;
+}
+
 .--mt-15 {
   margin-top: 15px;
 }
