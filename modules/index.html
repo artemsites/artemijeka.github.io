@@ -23,7 +23,7 @@
     <div class="cards__container">
 
       <figure class="card-tilt">
-        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+        <video class="card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
           loop="loop">
           <source data-src="./video/jquery-fixer.mp4" type="video/mp4;">
           <source data-src="./video/jquery-fixer.webm" type="video/webm;">
@@ -39,7 +39,7 @@
       </figure>
 
       <figure class="card-tilt">
-        <video class="lazy card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
+        <video class="card-tilt__img" width="280" height="400" muted="muted" autoplay="autoplay" preload="none"
           loop="loop">
           <source data-src="./video/auto-scrolling.webm" type="video/webm;">
           <source data-src="./video/auto-scrolling.mp4" type="video/mp4;">
@@ -61,10 +61,8 @@
 
 
 
-  <script src="../js/vanilla-tilt.js"></script>
-  
+  <script src="../js/vanilla-tilt.js"></script>  
   <!-- <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 
   <script>
     VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
@@ -73,8 +71,6 @@
       glare: true,   // if it should have a "glare" effect
       "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
     });
-
-    var lazyLoadInstance = new LazyLoad({/*Your custom settings go here*/});
   </script>
 </body>
 
