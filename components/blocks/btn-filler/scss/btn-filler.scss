@@ -1,0 +1,43 @@
+button {
+  padding: 1rem 2rem;
+}
+
+.btn-filler {
+  position: relative;
+  overflow: hidden;
+
+  span:first-of-type {
+    mix-blend-mode: difference;
+    color: white;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  &.--inverse .filler {
+    background-color: black;
+  }
+
+  .filler {
+    display: flex;
+    background-color: black;
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+
+    transition: 1000ms;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    z-index: 5;
+
+    &.--filling {
+      width: 300%;
+      height: 300%;
+    }
+  }
+  
+  &.--active span:first-of-type {
+    mix-blend-mode: unset;
+  }
+}
