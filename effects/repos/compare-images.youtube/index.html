@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare images | Сравнивание изображений</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+
+
+  <div class="compare-images">
+    <span class="image-box">
+      <img src="img/tiger.jpg" alt="image">
+    </span>
+    <span class="image-box n-2"><!-- #2 -->
+      <img class="image-2" src="img/tiger.jpg" alt="image + filters"><!-- #2 -->
+      <span class="resizer"></span>
+    </span>
+
+    <span class="attention">&#8598;</span>
+  </div>
+
+
+
+
+  <script>
+    let attention = document.querySelector('.attention');
+    let imageBoxN2 = document.querySelector('.image-box.n-2');
+
+    imageBoxN2.addEventListener('mousedown', function(){
+      attention.classList.add('--remove');
+    });
+
+    // attention.style.left = imageBoxN2.getBoundingClientRect().width + 'px';
+  </script>
+  
+</body>
+</html>

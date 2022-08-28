@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.compare-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+  height: 40vw;
+  position: relative;
+}
+.compare-images .image-box {
+  width: 100%;
+  max-width: 70vw;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.compare-images .image-box img {
+  display: block;
+  width: 70vw;
+  height: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.compare-images .image-box:nth-child(2) {
+  width: 95%;
+  resize: horizontal;
+}
+.compare-images .image-box:nth-child(2) img {
+  -webkit-filter: blur(2px) sepia(0.8) grayscale(0.8);
+          filter: blur(2px) sepia(0.8) grayscale(0.8);
+}
+.compare-images .resizer {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: -o-linear-gradient(135deg, white 50%, transparent 0);
+  background: linear-gradient(-45deg, white 50%, transparent 0);
+  position: absolute;
+  left: unset;
+  top: unset;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+}
+
+.attention {
+  color: black;
+  font-size: 1.75rem;
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-animation-name: scale-floating;
+          animation-name: scale-floating;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  position: absolute;
+  top: 100%;
+  left: 95%;
+}
+.attention.--remove {
+  opacity: 0;
+}
+
+@-webkit-keyframes scale-floating {
+  0% {
+    font-size: 1.75rem;
+  }
+  50% {
+    font-size: 2.75rem;
+  }
+  100% {
+    font-size: 1.75rem;
+  }
+}
+
+@keyframes scale-floating {
+  0% {
+    font-size: 1.75rem;
+  }
+  50% {
+    font-size: 2.75rem;
+  }
+  100% {
+    font-size: 1.75rem;
+  }
+}

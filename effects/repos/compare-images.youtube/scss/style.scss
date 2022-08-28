@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.compare-images {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 40vw;
+
+  position: relative;
+  .image-box {
+    width: 100%;
+    max-width: 70vw;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    img {
+      display: block;
+      width: 70vw;
+      height: 40vw;
+
+      object-fit: cover;
+      // object-position: left center;
+
+      position: absolute;
+    }
+    &:nth-child(2) {
+      width: 95%;
+      resize: horizontal;
+      img {
+        filter: blur(2px) sepia(0.8) grayscale(0.8);
+      }
+    }
+  }
+
+  .resizer {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(-45deg, white 50%, transparent 0);
+
+    position: absolute;
+    left: unset;
+    top: unset;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+  }
+}
+
+.attention {
+  color: black;
+  font-size: 1.75rem;
+  opacity: 1;
+  transition-duration: 0.5s;
+  
+  animation-name: scale-floating;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+
+  position: absolute;
+  top: 100%;
+  left: 95%;
+  
+  &.--remove {
+    opacity: 0;
+  }
+}
+
+@keyframes scale-floating {  
+  0% {
+    font-size: 1.75rem;
+  }
+  50% {
+    font-size: 2.75rem;
+  }
+  100% {
+    font-size: 1.75rem;
+  }
+}

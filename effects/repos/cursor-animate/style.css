@@ -1,0 +1,29 @@
+#cursor,
+#follower {
+  border-radius: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  -webkit-transition: 0.2s cubic-bezier(0.35, -0.18, 0.59, 1.2) opacity, 0.5s cubic-bezier(0.35, -0.18, 0.59, 1.2) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.35, -0.18, 0.59, 1.2) opacity, 0.5s cubic-bezier(0.35, -0.18, 0.59, 1.2) -webkit-transform;
+  -o-transition: 0.5s cubic-bezier(0.35, -0.18, 0.59, 1.2) transform, 0.2s cubic-bezier(0.35, -0.18, 0.59, 1.2) opacity;
+  transition: 0.5s cubic-bezier(0.35, -0.18, 0.59, 1.2) transform, 0.2s cubic-bezier(0.35, -0.18, 0.59, 1.2) opacity;
+  transition: 0.5s cubic-bezier(0.35, -0.18, 0.59, 1.2) transform, 0.2s cubic-bezier(0.35, -0.18, 0.59, 1.2) opacity, 0.5s cubic-bezier(0.35, -0.18, 0.59, 1.2) -webkit-transform;
+  position: absolute;
+}
+
+#cursor {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#follower {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.03);
+}

@@ -1,0 +1,26 @@
+#cursor,
+#follower {
+  border-radius: 100%;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transition: 0.5s cubic-bezier(.35,-0.18,.59,1.2) transform,
+              0.2s cubic-bezier(.35,-0.18,.59,1.2) opacity;
+
+  position: absolute;
+}
+
+#cursor {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(#000, 0.5);
+}
+
+#follower {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(#000, 0.2);
+  background-color: rgba(#fff, 0.03);
+}
+
+// 15 минут
