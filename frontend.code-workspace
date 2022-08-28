@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "../../private/web.master-artem.ru/projects/frontend"
 		},
 		{
-			"path": "../../../../open_source/artemijeka.github.io"
+			"path": "."
 		}
 	],
 	"settings": {}
