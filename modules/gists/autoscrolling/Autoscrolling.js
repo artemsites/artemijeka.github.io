@@ -5,9 +5,9 @@
  * 
  * @version 1.7 - 23.03.2022
  * @cacher https://snippets.cacher.io/snippet/6cf4733376ca1d55c7fe
- * @gist https://gist.github.com/artemijeka/3c4510d49cabf5448038714ecdffee19
+ * @gist https://gist.github.com/artemsites/3c4510d49cabf5448038714ecdffee19
  * 
- * @dependancies scrollSmoothlyToPosition() - https://snippets.cacher.io/snippet/1530dfc32408f9682b30 - https://gist.github.com/artemijeka/860cfcd079b1f42cace732c31b5e3a29 
+ * @dependancies scrollSmoothlyToPosition() - https://snippets.cacher.io/snippet/1530dfc32408f9682b30 - https://gist.github.com/artemsites/860cfcd079b1f42cace732c31b5e3a29 
  * 
  * @param {String}   obj.selectorFrom         | a link or any element if you specified the target element selectorTarget | ссылка или любой элемент если указали целевой элемент selectorTarget
  * @param {Number}   obj.speedScroll          | optionally - default: 1000

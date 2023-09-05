@@ -4,7 +4,7 @@
  * @email   artem.kuznecov.samara@yandex.ru
  * @website https://web.master-artem.ru
  * @source  https://snippets.cacher.io/snippet/79e169f9ca705c345531
- * @source  https://gist.github.com/artemijeka/130fd58f6859999faafcea60de686262
+ * @source  https://gist.github.com/artemsites/130fd58f6859999faafcea60de686262
  * @param   {String}  obj.blockSelector
  * @param   {Boolean} obj.fixAtTop
  * @param   {String}  obj.fixUnderBlock
